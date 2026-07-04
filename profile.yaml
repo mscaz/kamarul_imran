@@ -34,7 +34,7 @@ email: ""
 orcid_id: ""            # e.g. "0000-0002-1825-0097"
 scopus_author_id: ""    # e.g. "57194536466"
 publons_id: ""
-google_scholar_url: ""
+google_scholar_url: "https://scholar.google.com/citations?user=XVf2_QcAAAAJ&hl=en&authuser=1"
 
 # ---- Optional engagement features ----
 contact_form_endpoint: ""   # Formspree endpoint, e.g. "https://formspree.io/f/xxxxxxx"
