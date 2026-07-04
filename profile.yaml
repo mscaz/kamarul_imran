@@ -11,9 +11,9 @@
 # ============================================================
 
 # ---- Required ----
-name: "Dr. Jane A. Researcher"
-qualification: "PhD in Molecular Biology"
-institution_address: "Department of Biology, XYZ University, City, Country"
+name: "Dr. Kamarul Imran Musa"
+qualification: "Epidemiologist"
+institution_address: "Department of Epidemiology, XYZ University, City, Country"
 
 # Required lists - add or remove lines starting with "  - "
 research_interests:
