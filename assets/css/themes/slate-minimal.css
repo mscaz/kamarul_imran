@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #33383f;
+  --color-primary-dark: #1f2226;
+  --color-accent: #6b7280;
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #212226;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e5e5;
+  --font-heading: 'Segoe UI', Helvetica, Arial, sans-serif;
+}

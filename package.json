@@ -1,0 +1,11 @@
+{
+  "name": "academic-profile-site-template",
+  "private": true,
+  "description": "Build scripts used only by GitHub Actions to refresh publication data. Not needed to view the site.",
+  "scripts": {
+    "fetch-publications": "node .github/scripts/read-profile-ids.js && node .github/scripts/fetch-orcid.js && node .github/scripts/fetch-scopus.js && node .github/scripts/build-publications-json.js"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

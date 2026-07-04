@@ -1,0 +1,45 @@
+# ============================================================
+# PROFILE CONFIGURATION
+# Edit the values after each colon. Do not remove or rename the
+# field names on the left (e.g. "name:", "email:") - the website
+# reads this file by those exact names.
+#
+# Lines starting with "#" are comments and are ignored.
+#
+# To hide an OPTIONAL field, leave its value as "" (empty quotes)
+# or delete the value after the colon.
+# ============================================================
+
+# ---- Required ----
+name: "Dr. Jane A. Researcher"
+qualification: "PhD in Molecular Biology"
+institution_address: "Department of Biology, XYZ University, City, Country"
+
+# Required lists - add or remove lines starting with "  - "
+research_interests:
+  - "Cancer Genomics"
+  - "CRISPR Gene Editing"
+  - "Computational Biology"
+
+expertise:
+  - "Next-Generation Sequencing"
+  - "Bioinformatics Pipeline Design"
+  - "Statistical Genetics"
+
+# ---- Optional contact & profile links ----
+# Leave any of these as "" to hide that item on the site.
+university_profile_url: ""
+linkedin_url: ""
+email: ""
+orcid_id: ""            # e.g. "0000-0002-1825-0097"
+scopus_author_id: ""    # e.g. "57194536466"
+publons_id: ""
+google_scholar_url: ""
+
+# ---- Optional engagement features ----
+contact_form_endpoint: ""   # Formspree endpoint, e.g. "https://formspree.io/f/xxxxxxx"
+calendly_url: ""            # e.g. "https://calendly.com/your-name"
+
+# ---- Appearance ----
+# One of: classic-navy, forest-green, ocean-teal, slate-minimal, warm-maroon
+theme: "classic-navy"

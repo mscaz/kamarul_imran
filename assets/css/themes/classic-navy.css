@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #1b3a5c;
+  --color-primary-dark: #12283f;
+  --color-accent: #3f7fbf;
+  --color-bg: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #5b6472;
+  --color-border: #e2e5ea;
+  --font-heading: Georgia, 'Times New Roman', serif;
+}

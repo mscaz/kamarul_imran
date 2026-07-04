@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Researcher Profile</title>
+<link rel="stylesheet" href="./assets/css/base.css">
+<noscript><link rel="stylesheet" href="./assets/css/themes/classic-navy.css"></noscript>
+</head>
+<body>
+
+<div id="config-error-banner"></div>
+
+<header class="hero">
+  <div class="container">
+    <h1 id="p-name">Loading profile&hellip;</h1>
+    <p class="qualification" id="p-qualification"></p>
+    <p class="institution" id="p-institution"></p>
+    <div class="hero-links" id="p-hero-links"></div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section" id="section-research-focus">
+    <h2>Research Focus</h2>
+    <div class="tag-group">
+      <h3>Research Interests</h3>
+      <div id="p-research-interests"></div>
+    </div>
+    <div class="tag-group">
+      <h3>Areas of Expertise</h3>
+      <div id="p-expertise"></div>
+    </div>
+  </section>
+
+  <section class="section" id="section-publications">
+    <h2>Publications &amp; Impact</h2>
+    <div class="metrics-row" id="p-metrics"></div>
+    <ul class="pub-list" id="p-publications"></ul>
+    <div class="profile-links" id="p-profile-links"></div>
+  </section>
+
+  <section class="section" id="section-connect">
+    <h2>Connect</h2>
+    <div class="badge-row" id="p-badges"></div>
+  </section>
+
+  <section class="section" id="section-contact" hidden>
+    <h2>Get in Touch</h2>
+    <div class="contact-grid">
+      <form class="contact-form" id="p-contact-form" method="POST">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required>
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="_replyto" required>
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="p-meeting"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container" id="p-footer"></div>
+</footer>
+
+<script src="./assets/js/vendor/js-yaml.min.js"></script>
+<script src="./assets/js/config-loader.js"></script>
+<script src="./assets/js/theme-loader.js"></script>
+<script src="./assets/js/render.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

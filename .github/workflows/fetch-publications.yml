@@ -1,0 +1,41 @@
+name: Fetch Publications Data
+
+on:
+  schedule:
+    - cron: '0 3 * * 1' # weekly, Monday 03:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install script dependencies
+        run: npm install --no-save js-yaml
+
+      - name: Fetch ORCID data
+        run: node .github/scripts/fetch-orcid.js
+
+      - name: Fetch Scopus data
+        env:
+          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+        run: node .github/scripts/fetch-scopus.js
+
+      - name: Build publications.json
+        run: node .github/scripts/build-publications-json.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/publications.json
+          git diff --staged --quiet || git commit -m "chore: refresh publications data [skip ci]"
+          git push
